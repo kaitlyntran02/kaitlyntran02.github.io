@@ -1,3 +1,211 @@
+/*
+----- FONTS -----
+font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
+(Regular 400 | Bold 700)
+
+----- COLORS -----
+Mint Green: #97E0C6;
+Blue: #386D8A;
+*/
+
 body {
-    padding: 15px 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* TITLE */
+#headerIntro h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: #fefefe;
+}
+
+#headerIntro h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #97E0C6;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #333;
+}
+
+section {
+    padding-top: 100px;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 52px;
+    background-color: #97E0C6;
+    z-index: 999;
+}
+
+nav ul {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 25px;
+    width: 100%;
+    max-width: 1250px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #386D8A;
+    text-align: center;
+    text-decoration: none;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+nav ul #navRight li a:hover {
+    background-color: #386D8A;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+#navRight {
+    float: right;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+#headerL-U {
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: #386D8A;
+}
+
+#headerIntro {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin-left: 10%;
+}
+
+#headerR-B {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: lightgrey;
+}
+
+/* ---------- PROJECTS ---------- */
+#projects {
+    padding-bottom: 100px;
+}
+
+#projects .container .row {
+    margin: 25px 0px;
+}
+
+.projectImg {
+    height: 300px;
+    background-color: lightgrey;
+}
+
+/* ---------- ABOUT ME ---------- */
+#aboutme {
+    background-color: #e8e8e8;
+}
+
+#aboutmeParagraph {
+    padding-bottom: 100px;
+}
+
+p a {
+    text-decoration: underline;
+    color: #386D8A;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+p a:hover {
+    color: #97E0C6;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+}
+
+footer ul {
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 25px;
+    width: 312px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    display: block;
+    padding: 14px 16px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #386D8A;
+    text-align: center;
+    text-decoration: none;
+    line-height: 4.4;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+footer ul li a:hover {
+    color: #fefefe;
+    text-decoration: none;
 }
